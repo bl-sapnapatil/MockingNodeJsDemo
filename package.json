@@ -1,7 +1,6 @@
 {
-  "name": "MockingNode",
+  "name": "mockingnode",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
@@ -13,5 +12,17 @@
     "chai": "^4.2.0",
     "mocha": "^7.1.2",
     "sinon": "^9.0.2"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bl-sapnapatil/MockingNodeJsDemo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bl-sapnapatil/MockingNodeJsDemo/issues"
+  },
+  "homepage": "https://github.com/bl-sapnapatil/MockingNodeJsDemo#readme",
+  "description": ""
 }
