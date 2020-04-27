@@ -1,8 +1,8 @@
 let chai = require('chai');
 let sinon = require('sinon');
 let expect = chai.expect;
-let addition = require('../modules/addition');
-let calculation = require('../modules/calculator');
+let addition = require('../main/addition');
+let calculation = require('../main/calculator');
 
 describe('calculator Test', () => {
 
@@ -18,16 +18,16 @@ describe('calculator Test', () => {
         add.restore();
     })
 
-    it('Add twice', (done) => {
-        let add = sinon.stub(addition, "add").onFirstCall().resolves(5).onCall(1).resolves(9)
-        add.withArgs(sinon.match.any, sinon.match.any)
-        calculation.calculate(1, 4).then(function (result) {
-            expect(result).to.equals(9);
-            done();
-        }).catch(function (err) {
-            done(err);
-        })
-        add.restore();
-    })
+    // it('Add twice', (done) => {
+    //     let add = sinon.stub(addition, "add").onFirstCall().resolves(5).onCall(1).resolves(9)
+    //     add.withArgs(sinon.match.any, sinon.match.any)
+    //     calculation.calculate(1, 4).then(function (result) {
+    //         expect(result).to.equals(9);
+    //         done();
+    //     }).catch(function (err) {
+    //         done(err);
+    //     })
+    //     add.restore();
+    // })
 })
 
